@@ -13,10 +13,10 @@ module.exports = {
     node: true,
     'react-native/react-native': true
   },
-  extends: ['standard', 'plugin:jsx-a11y/recommended'],
+  extends: ['standard'],
 
   // required to lint *.vue files
-  plugins: ['react', 'react-native', 'jsx-a11y'],
+  plugins: ['react', 'react-native'],
   // add your custom rules here
   rules: {
     // allow async-await
