@@ -1,3 +1,26 @@
+# ZhiHuForReactNative
+
+仿知乎客户端，使用 React Native 开发。
+
+## 已完成功能
+
+1. 底部的导航栏。
+1. 推荐页面顶部 tab 栏。
+1. 推荐页面。
+1. 推荐页面数据下拉刷新和上拉加载更多。
+1. 文章详情页面。
+1. 通过接口获取数据。
+
+## TODO
+
+1. 移除 `react-native-vector-icons` 引用到的多余字体文件，减少包体积
+2. 推荐页面顶部的搜索栏
+3. 详情页面顶部操作栏，显示返回按钮
+4. 推荐页面单个文章更多操作弹窗
+5. 适配横屏
+6. ESLint 规则调整
+7. 完成 splash screen 。
+
 ## 问题
 
 ### 1. 真机错误 The development server returned response error code: 500
@@ -29,15 +52,6 @@ ios 支持，android 不支持。
 ### 6. React Native Debugger 不能在 Network 面板上查看网络请求。
 
 在面板上鼠标右击，点击 Enable Network Inspect，启用网络请求检查。重新加载页面，在 Network 面板中查看请求。
-
-## TODO
-
-1. 移除 `react-native-vector-icons` 引用到的多余字体文件，减少包体积
-2. 推荐页面顶部的搜索栏
-3. 详情页面顶部操作栏，显示返回按钮
-4. 推荐页面单个文章更多操作弹窗
-5. 适配横屏
-6. ESLint 规则调整
 
 ## 资料
 
