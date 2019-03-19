@@ -61,4 +61,3 @@ ios 支持，android 不支持。
 1. [react native 开发实践](https://www.njleonzhang.com/2018/11/12/react-native-1.html#%E7%BB%93%E8%AF%AD)
 1. [React Native 调试技巧与心得](https://github.com/crazycodeboy/RNStudyNotes/blob/master/React%20Native%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7%E4%B8%8E%E5%BF%83%E5%BE%97/React%20Native%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7%E4%B8%8E%E5%BF%83%E5%BE%97.md)
 1. [为什么 React Native 连遭 Airbnb、Udacity 抛弃？](https://blog.csdn.net/csdnnews/article/details/81058740)
-1. []()
