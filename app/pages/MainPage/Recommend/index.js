@@ -21,7 +21,6 @@ let articles = []
 export default class Recommend extends React.Component {
   constructor(props) {
     super(props)
-    console.log('props', props)
     this.state = {
       dataSource: new ListView.DataSource({
         rowHasChanged: (row1, row2) => row1 !== row2
@@ -45,7 +44,6 @@ export default class Recommend extends React.Component {
   onPress = article => {
     const { navigate } = this.props.navigation
     navigate('Web', { article })
-    ToastUtil.showShort('点击')
   }
 
   onEndReached = () => {
@@ -88,11 +86,8 @@ export default class Recommend extends React.Component {
         this.setState({
           isRefreshing: false
         })
-
-        console.log(articles)
       })
       .catch(error => {
-        console.log('接口调用错误', error)
         this.setState({
           isRefreshing: false
         })
