@@ -40,25 +40,12 @@ const TabContainer = createBottomTabNavigator(
 const App = createStackNavigator(
   {
     Home: {
-      screen: TabContainer,
-      navigationOptions: {
-        headerLeft: null
-      }
+      screen: TabContainer
     }
   },
   {
     initialRouteName: 'Home',
-    headerMode: 'screen',
-    navigationOptions: {
-      headerStyle: {
-        backgroundColor: '#3e9ce9'
-      },
-      headerTitleStyle: {
-        color: '#fff',
-        fontSize: 20
-      },
-      headerTintColor: '#fff'
-    }
+    headerMode: 'none'
   }
 )
 
