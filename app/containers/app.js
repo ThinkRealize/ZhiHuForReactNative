@@ -7,6 +7,7 @@ import Idea from '../pages/Idea'
 import Member from '../pages/Member'
 import Mine from '../pages/Mine'
 import Notice from '../pages/Notice'
+import WebView from '../pages/MainPage/WebView/index'
 import * as theme from '../Theme/index'
 
 const TabContainer = createBottomTabNavigator(
@@ -41,6 +42,9 @@ const App = createStackNavigator(
   {
     Home: {
       screen: TabContainer
+    },
+    Web: {
+      screen: WebView
     }
   },
   {

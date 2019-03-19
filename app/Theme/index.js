@@ -1,4 +1,4 @@
-const primary = '#0084FF'
+export const primary = '#0084FF'
 
 export const mainPage = {
   tabActiveColor: primary,

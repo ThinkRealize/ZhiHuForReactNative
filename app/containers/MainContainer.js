@@ -13,7 +13,9 @@ export default class MainContainer extends React.Component {
     }
   }
 
-  static componentDidMount() {}
+  componentDidMount() {
+    console.log('this.props', this.props)
+  }
 
   render() {
     return <Main {...this.props} />

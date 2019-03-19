@@ -4,6 +4,7 @@ import ScrollableTabView, {
   ScrollableTabBar
 } from 'react-native-scrollable-tab-view'
 import { SafeAreaView } from 'react-navigation'
+import Recommend from './Recommend/index'
 
 export default class MainPage extends React.Component {
   constructor(props) {
@@ -18,7 +19,8 @@ export default class MainPage extends React.Component {
         },
         {
           id: 'recommend',
-          title: '推荐'
+          title: '推荐',
+          page: <Recommend {...this.props} />
         },
         {
           id: 'hotList',
@@ -47,21 +49,17 @@ export default class MainPage extends React.Component {
     })
   }
 
-  renderContent = title => {
-    return (
-      <View>
-        <Text>{title}</Text>
-      </View>
-    )
+  renderPage = (title, page) => {
+    return page
   }
 
   render() {
     const { tabs } = this.state
 
-    const content = tabs.map(({ id, title }) => {
+    const content = tabs.map(({ id, title, page }) => {
       return (
         <View key={id} tabLabel={title}>
-          {this.renderContent(title)}
+          {this.renderPage(title, page)}
         </View>
       )
     })
