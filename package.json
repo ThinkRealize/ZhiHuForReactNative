@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "format": "find app -name '*.js' | xargs prettier --write --config-precedence",
     "test": "jest"
   },
   "dependencies": {
@@ -33,6 +34,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "jest": "^24.5.0",
     "metro-react-native-babel-preset": "^0.53.1",
+    "prettier": "^1.16.4",
     "react-test-renderer": "16.8.3"
   },
   "jest": {
